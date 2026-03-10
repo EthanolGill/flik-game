@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLIK | The Art of the Strike</title>
+    <title>Flik</title>
+    <link rel="icon" type="image/png" href="assets/tower.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -57,14 +58,15 @@
 
         /* Hero Section */
         .hero {
-            height: 80vh;
+            height: 97vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1615529328331-f8917597711f?q=80&w=2070&auto=format&fit=crop'); /* Wood texture placeholder */
+            background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,2)), url('assets/montypython.jpg'); /* Wood texture placeholder */
             background-size: cover;
+            background-position: bottom;
             border-bottom: 5px double var(--gold);
         }
 
@@ -85,6 +87,8 @@
             border-radius: 8px;
             border: 1px solid var(--gold);
             margin-bottom: 40px;
+            line-height: 1.8;
+            text-align: center;
         }
 
         /* Help Page / Rules */
@@ -106,6 +110,8 @@
             text-align: center;
             border: 4px ridge var(--gold);
             transform: rotate(-1deg);
+            margin-top: 70px;
+            margin-bottom: 30px;
         }
 
         .btn {
@@ -122,7 +128,25 @@
 
         .btn:hover { scale: 1.05; background: #e2bc77; }
 
-        
+        .btn-scroll {
+            display: inline-block;
+            padding: 12px 25px;
+            background: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            text-decoration: none;
+            font-family: 'MedievalSharp', cursive;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .btn-scroll:hover {
+            background: var(--gold);
+            color: var(--dark-wood);
+            box-shadow: 0 0 15px rgba(197, 160, 89, 0.5);
+            transform: translateY(-2px);
+        }
 
         footer {
             text-align: center;
@@ -142,38 +166,49 @@
 
     <div class="hero">
         <h1>FLIK</h1>
+        <p style="font-size: 70%;">A Tabletop Game Designed by Ethan Gill and Ryan Harper</p>
         <p>Handcrafted Wood. Pure Strategy. Medieval Chaos.</p>
     </div>
 
     <section id="about">
-        <h2>The Legend of Flik</h2>
+        <div style="margin-top: 60px; text-align: center;">
+            <h2>The Legend of Flik</h2>
+        </div>
         <div class="card">
-            <p>Flik isn't just a game; it's a test of steady hands and tactical brilliance. Born from the tradition of tabletop skirmishes, every board is hand-carved to ensure a unique friction and speed. Whether you're defending your castle or sieging your opponent's ranks, every flick counts.</p>
+            <p>The story of Flik began as a modest spark of ingenuity within the confines of an AP Research classroom. Seeking a cure to overwhelming boredom, two friends utilized an electric cutter and scraps of cardboard to forge a primitive tabletop game. Dubbed "Flick Chess," the game became an immediate sensation among peers, though it was eventually set aside as the school year transitioned into summer.</p>
+            <p>The project remained dormant until late February of the following year, when the original prototype was rediscovered. This sparked a period of intense development and craftsmanship. The creators moved beyond cardboard, designing 3D printed pieces, handmaking wood game boards, and crafting custom storage boxes. They further expanded the game with a cast of new characters and refined the mechanics until the game was entirely reshaped and officially christened: Flik.</p>
         </div>
     </section>
 
     <section id="help">
-        <h2>Master the Flick</h2>
+        <h2>Mastering the Art of Flickery</h2>
         <div class="card">
             <h3>The Golden Rules</h3>
             <ul class="rule-list">
-                <li><strong>The Strike:</strong> Use only one finger to propel your piece.</li>
-                <li><strong>Collision:</strong> If you knock an enemy piece off the board, it is removed from play.</li>
-                <li><strong>The Boundary:</strong> Any piece that crosses the carved perimeter is considered "In Exile."</li>
-                <li><strong>Victory:</strong> Be the last House standing on the timber.</li>
+                <li><strong>The Strike:</strong> Use just one finger to propel your piece.</li>
+                <li><strong>Collision:</strong> If you contact an enemy piece during your turn, it is removed from play.</li>
+                <li><strong>The Boundary:</strong> Any piece that exits the board is removed from play.</li>
+                <li><strong>Victory:</strong> Eliminate all enemy pieces.</li>
             </ul>
+            <div style="margin-top: 30px; text-align: center;">
+                <p style="font-style: italic; font-size: 0.9rem; color: var(--gold);">Need the digital manuscript for your records?</p>
+                <a href="assets/flik-rules.pdf" target="_blank" class="btn-scroll">
+                    DOWNLOAD THE FULL TOMES (PDF)
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="expansion">
         <div class="expansion-banner">
-            <h2>NEW: Siege & Sorcery Pack</h2>
-            <p>Introducing weighted "Catapult" pieces and the "Ice Glaze" board modifier. Level up your game with 12 new hand-painted tokens.</p>
-            <a href="#" class="btn">CLAIM YOUR REWARDS</a>
+            <h2>Expansions on the Horizon</h2>
+            <p>We need your help to keep the game of Flik alive and thriving. Please let us know about any characters you would like to see! Your input is invaluable to us.</p>
+            <a href="#" class="btn">Reach Out</a>
         </div>
     </section>
     <section id="gallery">
-    <h2>The Armory</h2>
+    <h2>The Process</h2>
+    <p>They say Rome wasn't built in a day. Well, neither was Flik.</p>
     <div class="gallery-grid">
         <div class="card">
             <img src="your-board-image-1.jpg" alt="Flik Board Close-up" style="width:100%; border-radius:4px;">
@@ -195,7 +230,7 @@
     }
 </style>
     <footer>
-        &copy; 2026 Flik Tabletop Games. Crafted with honor in Troy, MI.
+        &copy; 2026 GH Tabletop Games. Crafted with honor in Troy, MI.
     </footer>
 
 </body>
