@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flik</title>
-    <link rel="icon" type="image/png" href="assets/tower.png">
+    <link rel="icon" type="image/png" href="assets/towerupdate.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -127,14 +127,26 @@
             padding: 40px;
             text-align: center;
             border: 4px ridge var(--gold);
-            transform: rotate(-1deg);
+            transform: rotate(-3deg);
             margin-top: 70px;
+            margin-bottom: 30px;
+        }
+
+        .store-banner {
+            background: var(--parchment);
+            color: var(--dark-wood);
+            padding: 40px;
+            text-align: center;
+            border: 4px ridge var(--gold);
+            margin-top: 100px;
             margin-bottom: 30px;
         }
 
         .btn {
             background: var(--gold);
             color: var(--dark-wood);
+            font-family: 'Cinzel', serif;
+            color: var(--parchment);
             padding: 15px 30px;
             text-decoration: none;
             font-weight: bold;
@@ -180,6 +192,7 @@
         <a href="#about">The Legend</a>
         <a href="#help">How to Play</a>
         <a href="#expansion">Expansions</a>
+        <a href="#store">Own a Copy</a>
     </nav>
 
     <div class="hero">
@@ -224,6 +237,14 @@
             <a href="#" class="btn">Reach Out</a>
         </div>
     </section>
+
+    <section id="store">
+        <div class="store-banner">
+            <h2><strong>Ready to bring Flik home? Secure your handcrafted copy today!</strong></h2>
+            <a href="#" class="btn">Purchase Now</a>
+        </div>
+    </section>
+
     <section id="gallery">
     <h2>The Process</h2>
     <p>They say Rome wasn't built in a day. Well, neither was Flik.</p>
@@ -240,7 +261,6 @@
 </section>
 
 <style>
-    /* Add this inside your <style> tag to make the gallery look pro */
     .gallery-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
